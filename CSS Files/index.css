@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*Welcome*/
+div#Welcome{
+    background-color: lightblue;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+/*Choose Education*/
+div#chooseEducation{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 120px 0px;
+}
+
+/*Big Text to show education selected*/
+#educationSelected{
+    color: white;
+    font-size: 4em;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/*Menu Images*/
+.menuImages{
+    color: white;
+    margin: 40px 35px 0px 80px;
+    position: relative;
+    text-align: center;
+}
+.menuImages img{
+    margin-left: -17px;
+}
+.menuImages img:hover{
+    opacity: 30%;
+}
+
+/*Centralises text on Image*/
+.imageText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

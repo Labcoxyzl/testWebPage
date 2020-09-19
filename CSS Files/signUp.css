@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.signup{
+    background-color: rgb(168, 255, 243);
+    border-radius: 40px;
+    padding: 20px
+}
+.signupRow{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+.signupRow ul{
+    list-style-type: none;
+    color: lightblue;
+}
+
+
+/*Form*/
+#form{
+    background-color: lightblue;
+    padding: 10px 50px;
+    margin: 30px 0px;
+}
+

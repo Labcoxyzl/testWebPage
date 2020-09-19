@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#filter{
+    color: white;
+}
+
+#firstRow, #secondRow, #thirdRow{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+.eventBlocks{
+    background-color: lightblue;
+}

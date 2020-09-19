@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/*Table styles*/
+.table tbody{
+    background-color: lightblue;
+}
+.table thead{
+    background-color: blue;
+    color: white;
+}

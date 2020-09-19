@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/9b470c7add.js" crossorigin="anonymous"></script>
+
+        <script src="./JS Files/index.js" defer></script>
+        <link href="./CSS Files/general.css" rel="stylesheet">
+        <link href="./CSS Files/index.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="./Images/logo.png" alt="AAAA logo">
+            </a>
+            <div class="container">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="aboutUs.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="opportunities.html">Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="events.html">Events & Programmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signUp.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-5" id="Welcome">
+                    <h1>Welcome</h1>
+                    <p>
+                    Here at Applied AI & Analytics Authority (AAAA), we believe in a Singapore which has a <b>competitive</b> and <b>sustainable</b> technological Industry.
+                    The AAAA regulates and develops Applied AI and Analytics in a holistic manner.
+                    </p>
+
+                    <p>
+                    In this website, you can get to know more about us, the opportunities we provide at AAAA,
+                     and the events & programmes that we have for the year.
+                     Feel free to sign up for any of the following using the <b>Sign Up</b> button on the navigation bar above.
+                    </p>
+                    <p>
+                    To begin, select your education level on the right and click the "Search" button to see what we have that would suit you best.
+                    </p>
+                </div>
+
+                <div class="col-1"></div>
+            
+                <div class="col-5" id="chooseEducation">
+                    <h2>Filter results</h2> <br>
+                    <div class="form-group">
+                        <label for="chooseEducation">I am a.....</label>
+                        <select name="chooseEducation" id="educationSelect" class="form-control">
+                            <option value="0">--Select Option--</option>
+                            <option value="poly">Polytechnic Student</option>
+                            <option value="undergrad">Undergraduate</option>
+                            <option value="postgrad">Postgraduate</option>
+                        </select>
+                        <p style="color: red;" id="invalidInput">&nbsp;</p>
+                        <button type="button" class="btn btn-primary btn-block" id="searchButton">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row" id="educationSelected">
+                <h1></h1>
+            </div>
+            <div class="row">
+                <div class="col-2 menuImages" id="AboutUs">
+                    <h2 class="imageText"><b>About Us</b></h2>
+                    <a href="aboutUs.html">
+                        <img style="background: linear-gradient(135deg, #4adede, #ff7b89);" src="./Images/transparentLogo.png" alt="About Us">
+                    </a>
+                </div>
+    
+                <div class="col-2 menuImages" id="Opportunities">
+                    <h2 class="imageText"><b>Opportunities</b></h2>
+                    <a href="opportunities.html">
+                        <img src="./Images/opportunitiesImage.jpg" alt="About Us">
+                    </a>
+                </div>
+    
+                <div class="col-2 menuImages" id="Events">
+                    <h2 class="imageText"><b>Events & Programmes</b></h2>
+                    <a href="events.html">
+                        <img src="./Images/eventsImage.jpg" alt="Events & Programmes">
+                    </a>
+                </div>
+
+                <div class="col-2 menuImages" id="SignUp">
+                    <h2 class="imageText"><b>Sign Up</b></h2>
+                    <a href="signUp.html">
+                        <img style="background: linear-gradient(135deg, #4adede, #ff7b89); padding:55px 30px 53px 50px;" src="./Images/signupImage.png" alt="About Us">
+                    </a>
+                </div>
+            </div>
+
+            <!--Captions when user did not select Education Level-->
+            <div class="row" id="defaultBlock">
+                <div class="col-2 menuImages" id="AboutUs">
+                    <p>Find out more about us: our mission and vision, and also our contact details!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Opportunities">
+                    <p>Select your education level above</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Events">
+                    <p>Select your education level above</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="SignUp">
+                    <p>Select your education level above</p>
+                </div>
+            </div>
+            <!--Captions when user select Polytechnic-->
+            <div class="row" id="polyBlock">
+                <div class="col-2 menuImages" id="AboutUs">
+                    <p>Find out more about us: our mission and vision, and also our contact details!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Opportunities">
+                    <p>As a polytechnic student, you may be interested in our Scholarships which are awarded yearly! If you are a year 3 student, you could consider interning with us!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Events">
+                    <p>If you are pursuing for a Diploma related to AI, you may want to have a look at our Competitions to put your skills to the test! If not, you may be interested at our AI courses available!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="SignUp">
+                    <p>Like what you see? Sign up for a consultation / competition / course / scholarship now!</p>
+                </div>
+            </div>
+            <!--Captions when user select Undergraduate-->
+            <div class="row" id="undergradBlock">
+                <div class="col-2 menuImages" id="AboutUs">
+                    <p>Find out more about us: our mission and vision, and also our contact details!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Opportunities">
+                    <p>As an undergraduate, you may be interested in our Scholarships which are awarded yearly! You may also consider interning with us while studying with the work-study programme!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Events">
+                    <p>Want to graduate with a nice portfolio on top of your degree? Build that portfolio of yours by competing in our competitions! You may also seek consultation to help you seek your career options.</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="SignUp">
+                    <p>Like what you see? Sign up for a consultation / competition / course / scholarship now!</p>
+                </div>
+            </div>
+            <!--Captions when user select Postgraduate-->
+            <div class="row" id="postgradBlock">
+                <div class="col-2 menuImages" id="AboutUs">
+                    <p>Find out more about us: our mission and vision, and also our contact details!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Opportunities">
+                    <p>Fear not postgraduates! AAAA also has scholarships for you while you pursue your Masters/PhD. If you'd like, you may consider signing up as a trainer with us to provide trainings for others!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="Events">
+                    <p>Ensure your skillsets are well polished by practicing them in our competitions! If you are interested, you may consider signing up as a consultant with us to provide consultation for others!</p>
+                </div>
+                 
+                <div class="col-2 menuImages" id="SignUp">
+                    <p>Like what you see? Sign up for a consultation / competition / course / scholarship now!</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+    <footer>
+        <p>Applied AI & Analytics Authority. 123 Jurong Gateway Road, Singapore 600131. Contact Us: +65 98765432 Mon-Fri 8am - 8pm</p>
+    </footer>
+</html>

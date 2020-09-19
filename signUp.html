@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/9b470c7add.js" crossorigin="anonymous"></script>
+
+        <link href="./CSS Files/general.css" rel="stylesheet">
+        <link href="./CSS Files/signUp.css" rel="stylesheet">
+        <script src="./JS Files/signUp.js" defer></script>
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="./Images/logo.png" alt="AAAA logo">
+            </a>
+            <div class="container">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="aboutUs.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="opportunities.html">Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="events.html">Events & Programmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signUp.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="container-fluid" id="backgroundBanner">
+            <div id="Header">
+                <h1>Sign Up</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row signupRow">
+                <div class="col-5 signup">
+                    Thank you for being interested in signing up for our programmes. 
+                     We value your privacy and your information provided will be used solely for registration purposes.
+                     To find out more about what information we keep, vist our <a href="#">Terms & Conditions</a>.
+                </div>
+                <div class="col-5 signup">
+                    <p>
+                     If you would like to find out more about the various opportunities and events,
+                     you may visit the links below to read about the opportunities and events & programmes.
+                    </p>
+                    <ul>
+                        <li><a href="opportunities.html"><b>Opportunities</b></a></li>
+                        <li><a href="events.html"><b>Events & Programmes</b></a></li>
+                    </ul>
+                </div>
+            </div>
+            <form id="form">
+                <div class="form-group">
+                    <h1>Personal Particulars</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" class="form-control" name="firstName" id="firstName" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" class="form-control" name="lastName" id="lastName" required>
+                        </div>
+                    </div>
+                    <br>
+                    <label for="email">Email address*</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com" required/>
+                    
+                    <br>
+
+                    <label for="phone">Phone*</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">(+65)</div>
+                        </div>
+                        <input type="tel" class="form-control" name="phone" id="phoneBox" placeholder="xxxxxxxx" required>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="categoryChoice">I would like to sign up for a...</label>
+                        <select name="categoryChoice" id="categoryChoice" class="form-control" required>
+                            <option value="consultation">Consultation</option>
+                            <option value="competition">Competition</option>
+                            <option value="course">Enrichment Course</option>
+                            <option value="scholarship">Scholarship</option>
+                        </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="chooseMonth">For the month</label>
+                            <select name="chooseMonth" id="monthChoice" class="form-control" aria-describedby="dateDesc">
+                                <option value="aug">August 2020</option>
+                                <option value="sep">September 2020</option>
+                                <option value="nov">November 2020</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Description under select date -->
+                    <small id="dateDesc" class="form-text text-muted">
+                        Subject to vacancy available. Vacancies are filled on a first-come-first-serve basis.    
+                    </small>    
+                </div>
+                <div class="form-group">
+                    <h1>Payment</h1>
+                    <legend id="cost">Cost: $2</legend>
+                    <fieldset id="paymentInfo">
+                        <fieldset>
+                            <label class="cardLabel">
+                                <input type="radio" value="visa" name="cCard" required>
+                                <img src="./Images/visaIcon.png" alt="visa">
+                            </label>
+                            <label class="cardLabel">
+                                <input type="radio" value="master" name="cCard" required>
+                                <img src="./Images/masterIcon.png" alt="master">
+                             </label>
+                            <label class="cardLabel">
+                                <input type="radio" value="amex" name="cCard" required>
+                                <img src="./Images/amexIcon.png" alt="amex">
+                            </label>
+                        </fieldset>
+
+                        <label for="cardName">Name on card*</label>
+                        <input type="text" class="form-control" name="cardName" id="cardName" required>
+                        <br>
+                        <label for="cardNumber">Credit Card Number*</label>
+                        <input type="text" class="form-control" name="cardNumber" id="cardBox" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" required>
+                        <br>
+                        <label for="monthList">Expiration Date*</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <select id="monthList" name="cardMonth" class="form-control" required>
+                                    <option value="">--Month--</option>
+                                    <option value="1">January (01)</option>
+                                    <option value="2">Febuary (02)</option>
+                                    <option value="3">March (03)</option>
+                                    <option value="4">April (04)</option>
+                                    <option value="5">May (05)</option>
+                                    <option value="6">June (06)</option>
+                                    <option value="7">July (07)</option>
+                                    <option value="8">August (08)</option>
+                                    <option value="9">September (09)</option>
+                                    <option value="10">October (10)</option>
+                                    <option value="11">November (11)</option>
+                                    <option value="12">December (12)</option>
+                                 </select>
+                            </div>
+                            <div class="col-6">
+                                <select id="yearList" name="cardYear" class="form-control" required>
+                                    <option value="">--Year--</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                 </select>
+                            </div>
+                        </div>
+                        <br>
+                        <label for="cscBox">Security Code*</label>
+                        <input type="text" class="form-control" name="cscBox" id="cscBox" pattern="^\d{3}$" maxlength="3" placeholder="nnn" required>
+                    </fieldset>
+                </div>
+                <input type="checkbox" name="agreeTNC" id="agreeTNC" required>
+                <label for="agreeTNC">I agree to the <a href="#">Terms & Conditions</a>.*</label>
+                <br>
+                <input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">I would like to subscribe to the monthly newsletter to receive updates.</label>
+                <br>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <p>Applied AI & Analytics Authority. 123 Jurong Gateway Road, Singapore 600131. Contact Us: +65 98765432 Mon-Fri 8am - 8pm</p>
+    </footer>
+    
+</html>

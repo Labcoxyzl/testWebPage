@@ -11,15 +11,14 @@
 
         <script src="https://kit.fontawesome.com/9b470c7add.js" crossorigin="anonymous"></script>
 
-        <link href="./CSS Files/general.css" rel="stylesheet">
-        <link href="./CSS Files/events.css" rel="stylesheet">
-        <script src="./JS Files/events.js" defer></script>
+        <link href="../CSS Files/general.css" rel="stylesheet">
+        <link href="../CSS Files/events.css" rel="stylesheet">
 
     </head>
     <body>
         <header>
             <a href="index.html">
-                <img src="./Images/logo.png" alt="AAAA logo">
+                <img src="../Images/logo.png" alt="AAAA logo">
             </a>
             <div class="container">
                 <ul class="nav nav-pills nav-justified">
@@ -46,47 +45,48 @@
                 <h1>Events & Programmes</h1>
             </div>
         </div>
-        <div class="container" id="filter">
+        <!-- <div class="container" id="filter">
             <h2>Filter Options</h2>
             <div class="form-row">
                 <div class="col">
-                    <select name="chooseType" id="eventSelect" class="form-control">
+                    <select name="chooseType" id="opportunitySelect" class="form-control">
                         <option value="all">All</option>
                         <option value="competition">Competitions</option>
                         <option value="courses">Enrichment Courses</option>
-                        <option value="consultation">Consultation</option>
+                        <option value="masterclass">Consultation</option>
                     </select>
                 </div>
                 <div class="col">
-                    <select name="chooseType" id="timeSelect" class="form-control">
+                    <select name="chooseType" id="opportunitySelect" class="form-control">
                         <option value="anytime">Anytime</option>
                         <option value="thisMonth">This Month</option>
-                        <option value="nextMonth">Next Month</option>
+                        <option value="thisSemester">This Semester (6 months)</option>
+                        <option value="masterclass">This year</option>
                     </select>
                 </div>
                 <div class="col-2">
                     <button type="button" class="btn btn-primary btn-block" id="filterButton">Filter</button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="container">
             <div class="row" id="firstRow">
-                <div class="col-3 eventBlocks competition thisMonth">
+                <div class="col-3 eventBlocks">
                     <h2>Analytics Competition</h2>
                     <p><b>Date:</b> 5th August 2020</p>
                     <p><b>Cost:</b> $70/person</p>
                     <p><b>Venue:</b> AAAA Building</p>
                     <p><b>Description:</b> Put ur Analytics skills to the test! Join this competition to face other competitiors in a series of quizzes and challenges.</p>
                 </div>
-                <div class="col-3 eventBlocks competition anytime">
+                <div class="col-3 eventBlocks">
                     <h2>AI<br>Competition</h2>
                     <p><b>Date:</b> 19th November 2020</p>
                     <p><b>Cost:</b> $70/person</p>
                     <p><b>Venue:</b> AAAA Building</p>
                     <p><b>Description:</b> Get ready! Create your own AI and present it to a panel of judges. The best idea and presentation wins!</p>
                 </div>
-                <div class="col-3 eventBlocks competition anytime">
+                <div class="col-3 eventBlocks">
                     <h2>SEA AI Competition</h2>
                     <p><b>Date:</b> 21st December 2020</p>
                     <p><b>Cost:</b> $70/person</p>
@@ -95,7 +95,7 @@
                 </div>                                
             </div>
 
-            <div class="row" id="secondRow courses thisMonth">
+            <div class="row" id="secondRow">
                 <div class="col-3 eventBlocks">
                     <h2>Fundamentals of AI (Course)</h2>
                     <p><b>Date:</b> 7th - 13th August 2020</p>
@@ -103,14 +103,14 @@
                     <p><b>Venue:</b> AAAA Building</p>
                     <p><b>Description:</b> New to AI and dont know where to start? Fear not! This 7-day course gives you everything you need to know about AI to get started.</p>
                 </div>
-                <div class="col-3 eventBlocks courses nextMonth">
+                <div class="col-3 eventBlocks">
                     <h2>AI Intermediate (Course)</h2>
                     <p><b>Date:</b> 7th - 13th September 2020</p>
                     <p><b>Cost:</b> $200/person</p>
                     <p><b>Venue:</b> AAAA Building</p>
                     <p><b>Description:</b> Already know the fundamentals and would like to work on your first project? This course teaches you how to plan and execute your AI project(s).</p>
                 </div>
-                <div class="col-3 eventBlocks courses anytime">
+                <div class="col-3 eventBlocks">
                     <h2>AI Advanced (Course)</h2>
                     <p><b>Date:</b> 7th - 13th December 2020</p>
                     <p><b>Cost:</b> $200/person</p>
@@ -120,21 +120,21 @@
             </div>
 
             <div class="row" id="thirdRow">
-                <div class="col-3 eventBlocks consultation thisMonth">
+                <div class="col-3 eventBlocks">
                     <h2>August Consultation</h2>
                     <p><b>Date:</b> Twice in August 2020</p>
                     <p><b>Cost:</b> $2/person</p>
                     <p><b>Venue:</b> AAAA Building</p>
                     <p><b>Description:</b> Get paired up with a consultant verified by AAAA to seek consultation! You may arrange 2 sessions in August (1hr each) with your consultant, who will contact you.</p>
                 </div>
-                <div class="col-3 eventBlocks consultation nextMonth">
+                <div class="col-3 eventBlocks">
                     <h2>September Consultation</h2>
                     <p><b>Date:</b> Twice in September 2020</p>
                     <p><b>Cost:</b> $2/person</p>
                     <p><b>Venue:</b> AAAA Building</p>
                     <p><b>Description:</b> Get paired up with a consultant verified by AAAA to seek consultation! You may arrange 2 sessions in September (1hr each) with your consultant, who will contact you.</p>
                 </div>
-                <div class="col-3 eventBlocks consultation anytime">
+                <div class="col-3 eventBlocks">
                     <h2>November Consultation</h2>
                     <p><b>Date:</b> Twice in November 2020</p>
                     <p><b>Cost:</b> $2/person</p>
@@ -146,9 +146,4 @@
 
 
     </body>
-
-    <footer>
-        <p>Applied AI & Analytics Authority. 123 Jurong Gateway Road, Singapore 600131. Contact Us: +65 98765432 Mon-Fri 8am - 8pm</p>
-    </footer>
-
 </html>
